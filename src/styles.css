@@ -1,0 +1,111 @@
+body {
+  font-family: "Domine", serif;
+  color: #2c1827;
+}
+ul {
+  margin: 5px 0px;
+  padding: 0px;
+}
+li {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  height: 20px;
+  word-wrap: break-word;
+  line-height: 1;
+  list-style: none;
+  width: 100%;
+}
+h1 {
+  font-size: 35px;
+  font-weight: 600;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.search-form {
+  margin-bottom: 60px;
+}
+
+.weather-app {
+  background: linear-gradient(
+    890.3deg,
+    rgb(214, 224, 255) 37.2%,
+    rgb(254, 168, 168) 137.3%
+  );
+  border: 1px solid rgb(135, 135, 135);
+  border-radius: 20px;
+  padding: 15px;
+  margin: 20px auto;
+  max-width: 600px;
+}
+.search-tab {
+  border-radius: 25px;
+  border: 0.5px solid #6299f7;
+  background-color: transparent;
+  box-shadow: 5px #fcf4d9;
+}
+.btn {
+  border-radius: 25px;
+  background-color: #6299f7;
+}
+
+.pinpoint {
+  font-size: 27px;
+  color: #6299f7;
+}
+.time {
+  text-align: center;
+  padding: 0px;
+  font-size: 17px;
+  font-weight: bolder;
+}
+
+.temperature {
+  color: rgb(33, 33, 33);
+  font-size: 55px;
+  font-weight: 400;
+}
+.units {
+  position: relative;
+  top: -30px;
+}
+
+.fa-sun {
+  color: #fffb00f6;
+  font-size: 60px;
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  padding: 10px 0px 20px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
+.weather-temperature {
+  height: 200px;
+  min-width: 80px;
+  padding: 10px 20px 5px;
+  background: transparent;
+}
+.sun-card {
+  min-width: 100px;
+  height: 100px;
+  padding: 5px;
+  background: transparent;
+}
+.weather-details {
+  height: 200px;
+  padding: 0px;
+  min-width: 80px;
+  background: transparent;
+}
+.future-forecast {
+  margin-top: -40px;
+  line-height: 29px;
+  font-size: 16px;
+  text-align: center;
+}
