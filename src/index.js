@@ -69,7 +69,7 @@ searchForm.addEventListener("submit", searchPlace);
 function showTemperature(response) {
   let cityX = document.querySelector("h1");
   cityX.innerHTML = response.data.name;
-  let realTemperature = document.querySelector(".temperature-box");
+  let realTemperature = document.querySelector(".current-temperature");
   let temperature = Math.round(response.data.main.temp);
   realTemperature.innerHTML = `${temperature}`;
 }

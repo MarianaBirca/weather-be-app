@@ -1,10 +1,19 @@
 body {
-  font-family: "Domine", serif;
-  color: #2c1827;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 28px;
+  text-align: center;
+  padding: 15px;
+  margin-bottom: 0;
+  margin-top: 20px;
 }
 ul {
-  margin: 5px 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
 }
 li {
   font-family: Arial, Helvetica, sans-serif;
@@ -15,43 +24,41 @@ li {
   list-style: none;
   width: 100%;
 }
-.city-header {
-  font-size: 35px;
-  font-weight: 600;
-  margin-top: 40px;
-  text-align: center;
+.overview {
+  margin-bottom: 20px;
 }
-
-.search-form {
-  margin-bottom: 60px;
+.weather-app-wrapper {
+  margin: 30px auto;
+  max-width: 600px;
 }
-
-.container {
+.weather-app {
   background: linear-gradient(
     890.3deg,
     rgb(214, 224, 255) 37.2%,
     rgb(254, 168, 168) 137.3%
   );
   border: 1px solid rgb(135, 135, 135);
-  border-radius: 20px;
-  padding: 15px;
-  margin: 20px auto;
-  max-width: 400px;
+  border-radius: 15px;
+  padding: 20px;
 }
-.search-tab {
-  border-radius: 25px;
+.fa-sun {
+  color: #fffb00f6;
+  font-size: 70px;
+}
+.search-form {
+  margin-bottom: 60px;
+}
+
+.search-city-input {
+  border-radius: 30px;
   border: 0.5px solid #6299f7;
   background-color: transparent;
   box-shadow: 5px #fcf4d9;
 }
-.btn {
-  border-radius: 25px;
-  background-color: #6299f7;
-}
 
 .pinpoint {
-  font-size: 27px;
-  color: #6299f7;
+  font-size: 30px;
+  color: #3363e6;
 }
 .time {
   text-align: center;
@@ -65,50 +72,23 @@ li {
   font-size: 55px;
   font-weight: 400;
 }
+
+.current-temperature strong {
+  color: rgb(33, 33, 33);
+  font-size: 54px;
+  font-weight: 400;
+  line-height: 1;
+}
 .units {
   position: relative;
-  top: -30px;
+  font-size: 16px;
+  top: -34px;
 }
 
-.fa-sun {
-  color: #fffb00f6;
-  font-size: 60px;
-  display: inline-block;
-  text-align: center;
-  width: 100%;
-  padding: 10px 0px 20px;
-}
-
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  box-sizing: border-box;
-}
-
-.weather-temperature {
-  height: 200px;
-  min-width: 80px;
-  padding: 10px 20px 5px;
-  background: transparent;
-}
-.sun-card {
-  min-width: 100px;
-  height: 100px;
-  padding: 5px;
-  background: transparent;
-}
-.weather-details {
-  height: 200px;
-  padding: 0px;
-  min-width: 80px;
-  background: transparent;
-}
 .future-forecast {
-  margin-top: -40px;
+  margin-top: 20px;
+  margin-bottom: 5px;
   line-height: 29px;
   font-size: 16px;
   text-align: center;
-}
-.git-link {
-  text-decoration: none;
 }
