@@ -80,11 +80,20 @@ function showTemperature(response) {
   iconElement.setAttribute("src", `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
 }
 
-  let apiKey = "f2385ad9d5dc3434f38126f0279324c2";
-  let city = "Bristol"
-  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
-  
+function search(city) {
+let apiKey = "f2385ad9d5dc3434f38126f0279324c2";
+let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+axios.get(apiUrl).then(showTemperature);
+}
 
-  axios.get(apiUrl).then(showTemperature);
+function handleSubmit(event) {
+  event.preventDefault();
+let cityInputElement = document.querySelector("#search-city-input");
+search(cityInputElement.value);
+}
 
+search("Bristol");
+
+let form = document.querySelector("#search-form");
+form.addEventListener("submit", handleSubmit);
 

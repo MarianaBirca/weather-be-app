@@ -55,10 +55,13 @@ li {
   box-shadow: 5px #fcf4d9;
 }
 
-.pinpoint {
-  font-size: 30px;
+.location-button {
+  font-size: 25px;
   color: #3363e6;
+  border-radius: 5px;
+  border: 0.8px solid #6299f7;
 }
+
 .date {
   text-align: center;
   padding: 0px;
