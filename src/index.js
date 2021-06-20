@@ -51,13 +51,12 @@ function showPosition(position) {
   let longitude = position.coords.longitude;
   let apiKey = "f2385ad9d5dc3434f38126f0279324c2";
   let apiGeoUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`;
- 
+  
   axios.get(apiGeoUrl).then(showTemperature);
 }
 function getCurrentPosition(event) {
   navigator.geolocation.getCurrentPosition(showPosition);
 }
-
 let currentLocation = document.querySelector(".location-button");
 currentLocation.addEventListener("click", getCurrentPosition);
 
@@ -70,7 +69,8 @@ function showTemperature(response) {
   let humidityElement = document.querySelector("#humidity");
   let windElement = document.querySelector("#wind");
   let feelsElement = document.querySelector("#feels");
-  temperatureElement = Math.round(response.data.main.temp);
+
+  temperatureElement.innerHTML = Math.round(response.data.main.temp);
   cityElement.innerHTML = response.data.name;
   descriptionElement.innerHTML = response.data.weather[0].description;
   humidityElement.innerHTML = response.data.main.humidity;
@@ -79,7 +79,8 @@ function showTemperature(response) {
 }
 
   let apiKey = "f2385ad9d5dc3434f38126f0279324c2";
-  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${cityElement}&appid=${apiKey}&units=metric`;
+  let city = "Paris"
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
   
 
   axios.get(apiUrl).then(showTemperature);
