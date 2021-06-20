@@ -51,13 +51,13 @@
             </div>
           </form>
           <div class="overview">
-            <h1>Paris</h1>
-            <p class="time" id="date"></p>
+            <h1 id="city"></h1>
+            <p id="date"></p>
           </div>
           <div class="row">
             <div class="col-4">
               <div class="current-temperature">
-                <strong>19</strong>
+                <strong id="temperature">19</strong>
                 <span class="units">
                   <small>°C | <a href="#">°F</a> </small>
                 </span>
@@ -68,10 +68,10 @@
             </div>
             <div class="col-4">
               <ul>
-                <li>Feels Like: 17 °C</li>
-                <li>Precipitation: 10%</li>
-                <li>Wind: 14 km/h</li>
-                <li>Humidity: 40%</li>
+                <li id="description"></li>
+                <li>Feels Like: <span id="feels"></span> °C</li>
+                <li>Wind: <span id="wind"></span> km/h</li>
+                <li>Humidity: <span id="humidity"></span>%</li>
               </ul>
             </div>
           </div>
