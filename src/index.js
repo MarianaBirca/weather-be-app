@@ -51,7 +51,7 @@ function showPosition(position) {
   let longitude = position.coords.longitude;
   let apiKey = "f2385ad9d5dc3434f38126f0279324c2";
   let apiGeoUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`;
-  
+
   axios.get(apiGeoUrl).then(showTemperature);
 }
 function getCurrentPosition(event) {
@@ -69,6 +69,7 @@ function showTemperature(response) {
   let humidityElement = document.querySelector("#humidity");
   let windElement = document.querySelector("#wind");
   let feelsElement = document.querySelector("#feels");
+  let iconElement = document.querySelector("#icon"); 
 
   temperatureElement.innerHTML = Math.round(response.data.main.temp);
   cityElement.innerHTML = response.data.name;
@@ -76,10 +77,11 @@ function showTemperature(response) {
   humidityElement.innerHTML = response.data.main.humidity;
   windElement.innerHTML = Math.round(response.data.wind.speed);
   feelsElement.innerHTML = Math.round(response.data.main.feels_like);
+  iconElement.setAttribute("src", `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
 }
 
   let apiKey = "f2385ad9d5dc3434f38126f0279324c2";
-  let city = "Paris"
+  let city = "Bristol"
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
   
 
