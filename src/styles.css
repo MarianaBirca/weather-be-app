@@ -102,6 +102,9 @@ li {
 .current-temp .active:hover {
   text-decoration: none;
 }
-.current-temp {
+.current-temp .celsius-link {
+  text-decoration: none;
+}
+.current-temp .fahrenheit-link {
   text-decoration: none;
 }
