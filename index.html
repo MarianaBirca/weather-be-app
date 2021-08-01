@@ -14,7 +14,10 @@
       href="https://fonts.googleapis.com/css2?family=Domine:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <script
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Epilogue&family=Libre+Caslon+Text&family=Magra&family=Share&display=swap" rel="stylesheet">
+<script
       src="https://kit.fontawesome.com/3f0cd08687.js"
       crossorigin="anonymous"
     ></script>
@@ -44,7 +47,7 @@
               <div class="col-3">
                 <input
                   type="submit"
-                  value="Search"
+                  value="search"
                   class="form-control btn btn-primary w-100"
                 />
               </div>
@@ -62,15 +65,13 @@
               </div>
             </div>
             <div class="col-4">
-              <div class="clearfix">
-                <img src="#" alt="icon image" id="icon" />
-              </div>
+                <img src="#" alt="icon image" id="icon" class="main-icon"/>
             </div>
             <div class="col-4">
-              <ul>
+              <ul class="weather-properties">
                 <li id="description"></li>
                 <li>Feels Like: <span id="feels"></span>°C</li>
-                <li>Wind: <span id="wind"></span> m/h</li>
+                <li>Wind: <span id="wind"></span> <span id="wind-units">m/h</span></li>
                 <li>Humidity: <span id="humidity"></span>%</li>
               </ul>
             </div>
@@ -78,8 +79,6 @@
             <div class="weather-forecast" id="forecast">
             </div>
           </div>
-        </div>
-
         <small>
           This project was coded by Mariana Birca and is
           <a
@@ -94,6 +93,7 @@
           >
         </small>
       </div>
+    </div>
     </div>
     <script src="src/index.js"></script>
   </body>

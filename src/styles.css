@@ -1,36 +1,41 @@
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Magra", sans-serif;
 }
 
 h1 {
-  font-size: 30px;
-  font-weight: 600;
-  line-height: 28px;
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 30px;
   text-align: center;
-  padding: 15px;
+  padding: 20px;
   margin-bottom: 0;
   margin-top: 20px;
+  font-family: "Libre Caslon Text", serif;
 }
-ul {
-  margin: 0;
-  padding: 0;
-}
+
 li {
   text-transform: capitalize;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 16px;
+  font-family: "Magra", sans-serif;
+  font-size: 15px;
   height: 20px;
   word-wrap: break-word;
-  line-height: 1;
   list-style: none;
   width: 100%;
+  margin: 5px 2px 2px 0;
+}
+#wind-units {
+  text-transform: lowercase;
 }
 .overview {
   margin-bottom: 20px;
   text-align: center;
+  font-size: 17px;
+  padding: 0px;
+  font-weight: 600;
+  font-family: "Magra", sans-serif;
 }
 .weather-app-wrapper {
-  margin: 30px auto;
+  margin: 35px auto;
   max-width: 600px;
 }
 .weather-app {
@@ -40,66 +45,62 @@ li {
     rgb(254, 168, 168) 137.3%
   );
   border: 1px solid rgb(135, 135, 135);
-  border-radius: 15px;
-  padding: 20px;
+  border-radius: 16px;
+  padding: 30px;
 }
 
 .search-form {
-  margin-bottom: 60px;
-}
-
-.search-city-input {
-  border-radius: 30px;
-  border: 0.5px solid #6299f7;
-  background-color: transparent;
-  box-shadow: 5px #fcf4d9;
+  margin-bottom: 20px;
 }
 
 .location-button {
-  font-size: 25px;
-  color: #3363e6;
-  border-radius: 5px;
-  border: 0.8px solid #6299f7;
+  font-size: 20px;
+  color: #2d60ec;
+  border-radius: 6px;
+  border: 0.9px solid #4ba6fc;
+  padding: 3px 10px;
+  background-color: transparent;
+  margin: 0px 10px;
 }
-
-.date {
-  text-align: center;
-  padding: 0px;
-  font-size: 17px;
-  font-weight: bolder;
+.search-tab {
+  font-size: 14px;
+  border-radius: 6px;
+  border: 0.9px solid #4ba6fc;
+  padding: 8px 18px;
+  background-color: transparent;
 }
-
-.temperature {
-  color: rgb(33, 33, 33);
-  font-size: 60px;
-  font-weight: 400;
+.btn {
+  font-size: 14px;
+  color: #6c757d;
+  border-radius: 6px;
+  border: 0.9px solid #4ba6fc;
+  padding: 8px 18px;
+  background-color: transparent;
 }
 
 .current-temp strong {
   color: rgb(33, 33, 33);
-  font-size: 54px;
-  font-weight: 400;
+  font-size: 55px;
+  font-weight: 300;
   line-height: 1;
 }
+.current-temp {
+  text-align: center;
+  display: block;
+  padding: 45px 10px 0px 30px;
+  font-family: "Libre Caslon Text", serif;
+}
+.main-icon {
+  width: 140px;
+  text-align: center;
+  margin: 0px 10px;
+  display: block;
+}
+
 .units {
   position: relative;
   font-size: 16px;
   top: -34px;
-}
-
-.current-temp .active {
-  color: rgb(33, 33, 33);
-  cursor: default;
-  text-decoration: none;
-}
-.current-temp .active:hover {
-  text-decoration: none;
-}
-.current-temp .celsius-link {
-  text-decoration: none;
-}
-.current-temp .fahrenheit-link {
-  text-decoration: none;
 }
 
 .weather-forecast {
@@ -108,8 +109,8 @@ li {
   color: #000;
 }
 .weather-forecast-date {
-font-size: 16px;
-opacity: 0.6;
+  font-size: 16px;
+  opacity: 0.6;
 }
 .weather-forecast-temperature {
   font-size: 13px;
