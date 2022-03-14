@@ -122,3 +122,9 @@ li {
 .footer-link {
   text-decoration: none;
 }
+
+.footer {
+  display: block;
+  text-align: center;
+  padding: 10px;
+}
